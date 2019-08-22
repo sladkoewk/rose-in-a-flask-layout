@@ -1,0 +1,102 @@
+.offer {
+  min-height: $offer-mobile-height;
+  text-align: center;
+  border-top: 1px solid transparent;
+}
+
+.offer__number {
+  display: inline-block;
+  margin-top: 29px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: $primary-color;
+  background: linear-gradient($primary-color, $primary-color) 100% 97% / 100% 2px no-repeat;
+  letter-spacing: 1px;
+}
+
+.offer__title {
+  margin-top: 4.6rem;
+}
+
+.offer__subtitle {
+  display: none;
+}
+
+.get-catalog {
+  display: flex;
+  flex-flow: nowrap column;
+  margin-top: 193px;
+}
+
+.get-catalog__name {
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.get-catalog__email {
+  margin: 0 auto;
+  margin-top: 20px;
+  opacity: 0;
+}
+
+.get-catalog__btn {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+@media (min-width: $breakpoint-tablet) {
+
+  .offer {
+    min-height: $offer-tablet-height;
+  }
+
+  .offer__number {
+    font-size: 4.6rem;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+
+  .offer {
+    min-height: $offer-desktop-height;
+    text-align: left;
+    background: url('../img/bg-flask.jpg') 49.6% 13.6% / cover no-repeat;
+  }
+
+  .offer__number {
+    display: none;
+  }
+
+  .offer__title {
+    margin-top: 126px;
+    text-align: left;
+  }
+
+  .offer__subtitle {
+    display: block;
+    margin-top: 35px;
+  }
+
+  .get-catalog {
+    flex-flow: nowrap row;
+    margin-top: 81px;
+  }
+
+  .get-catalog__name {
+    width: 239px;
+    margin: 0;
+    opacity: 1;
+  }
+
+  .get-catalog__email {
+    width: 369px;
+    margin: 0 0 0 19px;
+    opacity: 1;
+  }
+
+  .get-catalog__btn {
+    min-width: 348px;
+    margin: 0 0 0 19px;
+  }
+}

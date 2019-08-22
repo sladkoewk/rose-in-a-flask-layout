@@ -25,3 +25,45 @@ p {
   padding: 0;
   margin: 0;
 }
+
+.wrapper {
+  width: 100%;
+  padding: 0 10px;
+  display: inherit;
+  justify-content: inherit;
+  flex-flow: inherit;
+
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 0 35px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    max-width: $wrapper-width-desktop;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.bg-flask-mobile {
+  position: relative;
+}
+
+.bg-flask-mobile::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg-flask.jpg');
+  background-repeat: no-repeat;
+  background-position: 59.8% 3.9%;
+  background-size: auto 315%;
+  z-index: -1;
+  opacity: 0.73;
+
+  @media (min-width: $breakpoint-desktop) {
+    background: none;
+  }
+}
