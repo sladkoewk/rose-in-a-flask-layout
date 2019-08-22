@@ -33,6 +33,17 @@ body {
   }
 }
 
+.caption {
+  font-size: 2.6rem;
+  font-weight: normal;
+  line-height: 1.5;
+
+  @media (min-width: $breakpoint-desktop) {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+}
+
 .text {
   font-size: 1.6rem;
   font-weight: normal;
