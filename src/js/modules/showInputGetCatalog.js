@@ -1,12 +1,11 @@
-function showInputGetCatalog() {
-  const getCatalogBtn = document.getElementsByClassName('get-catalog__btn')[0];
-  const getCatalogName = document.getElementsByClassName('get-catalog__name')[0];
-  const getCatalogEmail = document.getElementsByClassName('get-catalog__email')[0];
+function showInputGetCatalog(buttonClassName, classNamesShow) {
+  const btn = document.getElementsByClassName(buttonClassName)[0];
 
-
-  getCatalogBtn.onclick = () => {
-    getCatalogName.style.opacity = '1';
-    getCatalogEmail.style.opacity = '1';
+  btn.onclick = () => {
+    const elems = classNamesShow.map((elem) => document.getElementsByClassName(elem)[0]);
+    elems.forEach((element) => {
+      element.style.opacity = '1';
+    });
   };
 }
 

@@ -1,0 +1,172 @@
+.form__left {
+  @media (min-width: $breakpoint-desktop) {
+    width: 50%;
+  }
+}
+
+.left__rose-color {
+  margin-top: 70px;
+  position: relative;
+  text-align: center;
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-top: 103px;
+    text-align: left;
+  }
+}
+
+.form__title {
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+  color: $text-light-color;
+
+  @media (min-width: $breakpoint-desktop) {
+    font-size: 2.5rem;
+    letter-spacing: 0;
+  }
+}
+
+.rose-color__btn {
+  margin-top: 34px;
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-top: 24px;
+  }
+}
+
+.rose-color__dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  max-height: 400px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-size: 3rem;
+  text-align: left;
+  overflow-y: auto;
+  z-index: 2;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: 0 auto;
+    width: 460px;
+    left: 50%;
+    margin-left: -230px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 332px;
+    left: 40%;
+  }
+}
+
+.rose-color__option {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 23px;
+  padding-left: 25px;
+  border-bottom: 3px solid $secondary-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $text-on-s;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding-top: 14px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid $secondary-color;
+  }
+}
+
+.rose-color__icon {
+  vertical-align: middle;
+  margin-right: 15px;
+  margin-bottom: 2px;
+  width: 24px;
+  height: auto;
+}
+
+// ================ SIZE-FLASK =================
+
+.left__size-flask {
+  margin-top: 54px;
+  position: relative;
+  text-align: center;
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-top: 40px;
+    text-align: left;
+  }
+}
+
+.size-flask__btn {
+  margin-top: 34px;
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-top: 16px;
+  }
+}
+
+.size-flask__dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-size: 2.7rem;
+  text-align: left;
+  overflow-x: auto;
+  z-index: 2;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: 0 auto;
+    width: 460px;
+    left: 50%;
+    margin-left: -230px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+    left: 40%;
+    width: 800px;
+  }
+}
+
+.size-flask__option {
+  display: block;
+  border-right: 2px solid $secondary-color;
+  padding-top: 27px;
+  padding-bottom: 23px;
+  padding-left: 25px;
+  border-bottom: 3px solid $secondary-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $text-on-s;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    padding: 7px 0;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  }
+}
+
+.size-flask__size {
+  @media (min-width: $breakpoint-desktop) {
+    display: none;
+  }
+}
+
+.size-flask__image {
+  display: none;
+
+  @media (min-width: $breakpoint-desktop) {
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

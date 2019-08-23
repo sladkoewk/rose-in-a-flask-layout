@@ -1,0 +1,12 @@
+.clear {
+  padding-left: 36px;
+  font-size: 2.6rem;
+  color: $text-on-s;
+  text-decoration: underline;
+  cursor: pointer;
+
+  @media (min-width: $breakpoint-desktop) {
+    padding-left: 28px;
+    font-size: 1.8rem;
+  }
+}
