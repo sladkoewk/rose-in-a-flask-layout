@@ -1,4 +1,4 @@
-function colorSelect(params) {
+function accessorySelect(params) {
   const {
     optionsClassName,
     selectButtonClassName,
@@ -29,19 +29,13 @@ function colorSelect(params) {
   });
 
   for (let i = 0; i < options.length; i++) {
-    const colorName = options[i].textContent.trim();
-    const colorImgUrl = options[i].querySelector('img').getAttribute('src');
-    const img = document.createElement('img');
-    img.setAttribute('src', colorImgUrl);
-    img.setAttribute('alt', colorName);
-    img.setAttribute('class', 'rose-color__icon');
+    const size = options[i].firstChild.textContent.trim();
 
     options[i].onclick = () => {
-      selectButton.innerHTML = colorName;
-      selectButton.prepend(img);
+      selectButton.innerHTML = size;
       containerElements.style.display = 'none';
     };
   }
 }
 
-export default colorSelect;
+export default accessorySelect;

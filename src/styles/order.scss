@@ -13,7 +13,7 @@
 
 .form__description {
   text-align: center;
-  margin-top: 112px;
+  margin-top: 116px;
 
   @media (min-width: $breakpoint-desktop) {
     margin-top: 123px;
@@ -25,20 +25,32 @@
   font-size: 2.4rem;
   font-weight: normal;
   color: $text-on-s;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
 }
 
 .description__notice {
   display: block;
-  margin-top: 47px;
+  margin-top: 42px;
   font-size: 3.6rem;
   font-weight: bold;
   color: $text-light-color;
   letter-spacing: 1px;
-  line-height: 1.32;
+  line-height: 1.5;
+
+  &--only-desktop {
+    display: none;
+  }
 
   @media (min-width: $breakpoint-desktop) {
-    margin-top: 50px;
+    margin-top: 43px;
+
+    &--only-mobile {
+      display: none;
+    }
+
+    &--only-desktop {
+      display: inline;
+    }
   }
 }
 

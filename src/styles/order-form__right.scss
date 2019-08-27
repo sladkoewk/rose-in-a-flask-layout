@@ -10,7 +10,7 @@
 
   @media (min-width: $breakpoint-desktop) {
     display: block;
-    margin-top: 160px;
+    margin-top: 152px;
   }
 }
 
@@ -26,7 +26,8 @@
   margin-top: 79px;
 
   @media (min-width: $breakpoint-desktop) {
-    padding-left: 24px;
+    margin-top: 77px;
+    padding-left: 25px;
   }
 }
 
@@ -71,7 +72,7 @@
   list-style-position: inside;
 
   @media (min-width: $breakpoint-desktop) {
-    margin-top: 23px;
+    margin-top: 20px;
     line-height: 1.9;
     letter-spacing: 0.5px;
   }
@@ -80,21 +81,22 @@
 .choose-list__element {
   text-align: center;
   font-size: 3rem;
-  line-height: 1.6;
+  line-height: 1.55;
   color: $text-light-color;
 
   @media (min-width: $breakpoint-desktop) {
+    padding-left: 4px;
     font-size: 2.4rem;
     text-align: left;
-    line-height: 1.85;
+    line-height: 1.94;
   }
 }
 
 .form__sum-price {
   display: block;
   text-align: center;
-  margin-top: 80px;
-  font-size: 3.5rem;
+  margin-top: 84px;
+  font-size: 3.6rem;
   font-weight: bold;
   color: $text-light-color;
   letter-spacing: 1.2px;

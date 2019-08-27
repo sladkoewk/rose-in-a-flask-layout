@@ -82,7 +82,13 @@
       <div class="order__form">
         <div class="form__description">
           <span class="description__title">Форма оптового заказа</span>
-          <span class="description__notice">Минимальная партия от 5000 рублей</span>
+          <span class="description__notice">
+            Минимальная партия
+            <br class="description__notice--only-mobile" />
+            от 5000
+            <span class="description__notice--only-mobile">руб.</span>
+            <span class="description__notice--only-desktop">рублей</span>
+          </span>
         </div>
         <div class="form__container">
           <div class="form__left">
@@ -92,7 +98,7 @@
                 <span class="rose-color__clear--js clear">Очистить</span>
               </div>
               <button class="rose-color__btn btn btn--select">
-                Выберите цвет
+                Не выбрано
               </button>
               <div class="rose-color__dropdown-content">
                 <ul>
@@ -165,7 +171,7 @@
                 <span class="size-flask__clear--js clear">Очистить</span>
               </div>
               <button class="size-flask__btn btn btn--select">
-                Выберите размер
+                Не выбрано
               </button>
               <div class="size-flask__dropdown-content">
                 <div class="size-flask__option">
@@ -205,6 +211,52 @@
                 </div>
               </div>
             </div>
+            <div class="left__count">
+              <span class="count__title">Количество</span>
+              <div class="count__select">
+                <button class="count-flask__decrement--js btn btn--minus"></button>
+                <input class="count__quantity count-flask__quantity--js input input--count" value="1" type="number"
+                  min="0">
+                <button class="count-flask__increment--js btn btn--plus"></button>
+              </div>
+            </div>
+            <div class="left__separator">_</div>
+            <div class="left__accessory">
+              <div>
+                <span class="form__title">Комплектующие</span>
+                <span class="accessory__clear--js clear">Очистить</span>
+              </div>
+              <button class="accessory__btn btn btn--select">
+                Не выбрано
+              </button>
+              <div class="accessory__dropdown-content">
+                <div class="accessory__option">
+                  Коробка подарочная квадратная M
+                </div>
+                <div class="accessory__option">
+                  Коробка подарочная квадратная Premium
+                </div>
+                <div class="accessory__option">
+                  Коробка подарочная квадратная XXL
+                </div>
+                <div class="accessory__option">
+                  Шильдик металлический с гравировкой (любой текст)
+                </div>
+                <div class="accessory__option">
+                  Мишка из фоаминовых роз (от 3-5 штук), 40 см.
+                </div>
+              </div>
+            </div>
+            <div class="left__count">
+              <span class="count__title">Количество</span>
+              <div class="count__select">
+                <button class="count-accessory__decrement--js btn btn--minus"></button>
+                <input class="count__quantity count-accessory__quantity--js input input--count" value="1" type="number"
+                  min="0">
+                <button class="count-accessory__increment--js btn btn--plus"></button>
+              </div>
+            </div>
+
           </div>
           <div class="form__right">
             <div class="form__instuction">

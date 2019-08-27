@@ -4,8 +4,10 @@
   }
 }
 
+// ================ ROSE-COLOR =================
+
 .left__rose-color {
-  margin-top: 70px;
+  margin-top: 62px;
   position: relative;
   text-align: center;
 
@@ -30,7 +32,7 @@
   margin-top: 34px;
 
   @media (min-width: $breakpoint-desktop) {
-    margin-top: 24px;
+    margin-top: 21px;
   }
 }
 
@@ -48,14 +50,14 @@
 
   @media (min-width: $breakpoint-tablet) {
     margin: 0 auto;
-    width: 460px;
+    width: 570px;
     left: 50%;
-    margin-left: -230px;
+    margin-left: -285px;
   }
 
   @media (min-width: $breakpoint-desktop) {
     width: 332px;
-    left: 40%;
+    left: 49%;
   }
 }
 
@@ -68,7 +70,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: $text-on-s;
+    background-color: $highlight-color;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -89,7 +91,7 @@
 // ================ SIZE-FLASK =================
 
 .left__size-flask {
-  margin-top: 54px;
+  margin-top: 53px;
   position: relative;
   text-align: center;
 
@@ -121,21 +123,20 @@
 
   @media (min-width: $breakpoint-tablet) {
     margin: 0 auto;
-    width: 460px;
+    width: 570px;
     left: 50%;
-    margin-left: -230px;
+    margin-left: -285px;
   }
 
   @media (min-width: $breakpoint-desktop) {
     flex-direction: row;
-    left: 40%;
+    left: 49%;
     width: 800px;
   }
 }
 
 .size-flask__option {
   display: block;
-  border-right: 2px solid $secondary-color;
   padding-top: 27px;
   padding-bottom: 23px;
   padding-left: 25px;
@@ -143,10 +144,12 @@
   cursor: pointer;
 
   &:hover {
-    background-color: $text-on-s;
+    background-color: $highlight-color;
   }
 
   @media (min-width: $breakpoint-desktop) {
+    border-bottom: none;
+    border-right: 2px solid $secondary-color;
     display: flex;
     padding: 7px 0;
     flex-direction: column;
@@ -168,5 +171,123 @@
     display: block;
     padding-left: 25px;
     padding-right: 25px;
+  }
+}
+
+// ================ COUNT =================
+
+.left__count {
+  margin-top: 62px;
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-top: 42px;
+  }
+}
+
+.count__title {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  color: $text-light-color;
+  letter-spacing: 0.9px;
+
+  @media (min-width: $breakpoint-desktop) {
+    text-align: left;
+    font-size: 2.5rem;
+    letter-spacing: 0;
+  }
+}
+
+.count__select {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 39px;
+
+
+  @media (min-width: $breakpoint-desktop) {
+    justify-content: flex-start;
+    margin-top: 18px;
+  }
+}
+
+.count__quantity {
+  margin: 0 29px;
+
+  @media (min-width: $breakpoint-desktop) {
+    margin: 0 8px;
+  }
+}
+
+.left__separator {
+  margin-top: 53px;
+  color: transparent;
+  width: 100%;
+  border-bottom: 1px solid $text-light-color;
+
+  @media (min-width: $breakpoint-desktop) {
+    display: none;
+  }
+}
+
+// ================ ACCESSORY =================
+
+.left__accessory {
+  position: relative;
+  margin-top: 58px;
+  text-align: center;
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-top: 92px;
+    text-align: left;
+  }
+}
+
+.accessory__btn {
+  margin-top: 36px;
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-top: 18px;
+    width: 98%;
+  }
+}
+
+.accessory__dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  max-height: 400px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-align: left;
+  overflow-y: auto;
+  z-index: 2;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: 0 auto;
+    width: 570px;
+    left: 50%;
+    margin-left: -285px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 576px;
+    left: 50%;
+    margin-left: -292px;
+  }
+}
+
+.accessory__option {
+  display: block;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 25px;
+  border-bottom: 3px solid $secondary-color;
+  font-size: 2.7rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $highlight-color;
   }
 }

@@ -1,4 +1,11 @@
-function sizeSelect(optionsClassName, selectButtonClassName, containerClassName, clearClassName) {
+function sizeSelect(params) {
+  const {
+    optionsClassName,
+    selectButtonClassName,
+    containerClassName,
+    clearClassName,
+  } = params;
+
   const clearSelect = document.getElementsByClassName(clearClassName)[0];
   const selectButton = document.getElementsByClassName(selectButtonClassName)[0];
   const options = document.getElementsByClassName(optionsClassName);
@@ -9,7 +16,7 @@ function sizeSelect(optionsClassName, selectButtonClassName, containerClassName,
   };
 
   clearSelect.onclick = () => {
-    selectButton.innerHTML = 'Выберите размер';
+    selectButton.innerHTML = 'Не выбрано';
   };
 
   document.addEventListener('click', (e) => {
