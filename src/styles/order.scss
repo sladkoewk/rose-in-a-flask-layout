@@ -4,6 +4,7 @@
 
 .order__form {
   padding-top: 1px;
+  padding-bottom: 155px;
   min-height: $order-form-mobile-height;
 
   @media (min-width: $breakpoint-desktop) {
