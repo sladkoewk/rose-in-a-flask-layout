@@ -1,3 +1,5 @@
+import Swiper from '../vendors/swiper';
+
 const swiper = new Swiper('.swiper-container', {
   spaceBetween: 50,
   centeredSlides: true,

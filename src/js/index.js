@@ -1,5 +1,7 @@
 import './vendors/svgxuse';
 import './vendors/polyfillPrepend';
+
+import baguetteBox from './vendors/baguetteBox';
 import horizontalScrolling from './vendors/horizontalScrolling';
 
 import showInputGetCatalog from './modules/showInputGetCatalog';
@@ -9,6 +11,8 @@ import quantitySelect from './modules/quantitySelect';
 import accessorySelect from './modules/accessorySelect';
 import './modules/ymap';
 import './modules/swiper';
+
+baguetteBox.run('.baguetteBox');
 
 horizontalScrolling(['size-flask__dropdown-content']);
 
@@ -52,5 +56,3 @@ quantitySelect({
   buttonDecrementClassName: 'count-accessory__decrement--js',
   buttonIncrementClassName: 'count-accessory__increment--js',
 });
-
-baguetteBox.run('.baguetteBox');
