@@ -1,5 +1,5 @@
-import polifillSvgForIE from './vendors/svgxuse';
-import polyfillPrepend from './vendors/polyfillPrepend';
+import './vendors/svgxuse';
+import './vendors/polyfillPrepend';
 import horizontalScrolling from './vendors/horizontalScrolling';
 
 import showInputGetCatalog from './modules/showInputGetCatalog';
@@ -7,10 +7,8 @@ import colorSelect from './modules/colorSelect';
 import sizeSelect from './modules/sizeSelect';
 import quantitySelect from './modules/quantitySelect';
 import accessorySelect from './modules/accessorySelect';
-import ymap from './modules/ymap';
-
-polifillSvgForIE();
-polyfillPrepend();
+import './modules/ymap';
+import './modules/swiper';
 
 horizontalScrolling(['size-flask__dropdown-content']);
 
@@ -55,4 +53,4 @@ quantitySelect({
   buttonIncrementClassName: 'count-accessory__increment--js',
 });
 
-ymap();
+baguetteBox.run('.baguetteBox');

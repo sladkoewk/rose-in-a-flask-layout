@@ -1,7 +1,8 @@
 .delivery-pay {
-  padding-top: 1px;
+
 
   @media (min-width: $breakpoint-desktop) {
+    padding-top: 1px;
     background: url('../img/rose.jpg') no-repeat;
     background-size: cover;
     background-position: 60% 0;

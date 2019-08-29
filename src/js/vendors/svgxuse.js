@@ -6,7 +6,7 @@
  */
 /* jslint browser: true */
 /* global XDomainRequest, MutationObserver, window */
-function polifillSvgForIE() {
+(function polifillSvgForIE() {
   if (typeof window !== 'undefined' && window.addEventListener) {
     const cache = Object.create(null); // holds xhr objects to prevent multiple requests
     let checkUseElems;
@@ -224,6 +224,4 @@ function polifillSvgForIE() {
       winLoad();
     }
   }
-}
-
-export default polifillSvgForIE;
+}());
