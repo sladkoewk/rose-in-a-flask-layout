@@ -7,6 +7,7 @@ import colorSelect from './modules/colorSelect';
 import sizeSelect from './modules/sizeSelect';
 import quantitySelect from './modules/quantitySelect';
 import accessorySelect from './modules/accessorySelect';
+import ymap from './modules/ymap';
 
 polifillSvgForIE();
 polyfillPrepend();
@@ -53,3 +54,5 @@ quantitySelect({
   buttonDecrementClassName: 'count-accessory__decrement--js',
   buttonIncrementClassName: 'count-accessory__increment--js',
 });
+
+ymap();
