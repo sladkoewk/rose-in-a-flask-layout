@@ -6,7 +6,7 @@ ymaps.ready(() => {
 
   const myPlacemark = new ymaps.Placemark([45.045308, 38.984051], {}, {
     iconLayout: 'default#image',
-    iconImageHref: '../img/marker.png',
+    iconImageHref: 'img/marker.png',
     iconImageSize: [60, 88],
     iconImageOffset: [-25, -80],
   });

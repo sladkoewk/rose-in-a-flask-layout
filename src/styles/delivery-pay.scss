@@ -3,7 +3,7 @@
 
   @media (min-width: $breakpoint-desktop) {
     padding-top: 1px;
-    background: url('../img/rose.jpg') no-repeat;
+    background: url('img/rose.jpg') no-repeat;
     background-size: cover;
     background-position: 60% 0;
     height: $delivery-pay-desktop-height;
@@ -12,7 +12,7 @@
 
 .bg-delivery-pay-mobile {
   position: relative;
-  background: url('../img/rose.jpg') no-repeat;
+  background: url('img/rose.jpg') no-repeat;
   background-size: cover;
   background-position: 94% 0;
   height: 956px;

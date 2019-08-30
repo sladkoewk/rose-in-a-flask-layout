@@ -7,7 +7,7 @@
   &--minus {
     height: 85px;
     width: 85px;
-    background: transparent url('../img/minus.png') 50% 50%/27px 2px no-repeat;
+    background: transparent url('img/minus.png') 50% 50%/27px 2px no-repeat;
 
     @media (min-width: $breakpoint-desktop) {
       height: 66px;
@@ -18,7 +18,7 @@
   &--plus {
     height: 85px;
     width: 85px;
-    background: transparent url('../img/plus.png') 50% 50%/27px 27px no-repeat;
+    background: transparent url('img/plus.png') 50% 50%/27px 27px no-repeat;
 
     @media (min-width: $breakpoint-desktop) {
       height: 66px;
