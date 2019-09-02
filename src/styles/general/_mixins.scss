@@ -1,7 +1,0 @@
-@mixin bg-contain($size, $url) {
-  width: $size;
-  height: $size;
-  background-image: url($url);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
